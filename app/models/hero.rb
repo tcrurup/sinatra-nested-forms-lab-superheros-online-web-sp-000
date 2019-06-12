@@ -1,6 +1,6 @@
 class Hero
   
-  attr_accessor :name, :power, :bio
+  attr_reader :name, :power, :bio
   
   ALL_HEROES = []
   
