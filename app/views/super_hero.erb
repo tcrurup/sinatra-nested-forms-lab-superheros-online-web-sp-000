@@ -9,7 +9,21 @@
     <h1>Create a Team and Heroes!</h1>
     <form method='post'>
       
-      <input type='text' name='team[name]'>
+      <div class='team_info'>
+        <label for='team[name]'>Team Name: </label>
+        <input type='text' name='team[name]'><br>
+        <label for='team[motto]'>Team Motto: </label>
+        <input type='text' name='team[motto]'><br>
+      </div>
+      
+      <%
+        x = 0
+        while x <= 3
+        x += 1
+      %>
+      
+      
+      <% end %>
       
       
     </form>
