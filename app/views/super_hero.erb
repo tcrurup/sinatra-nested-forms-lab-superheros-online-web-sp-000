@@ -9,7 +9,7 @@
     <h1>Create a Team and Heroes!</h1>
     <form method='post'>
       
-      <div class='team_info'>
+      <div class='team'>
         <label for='team[name]'>Team Name: </label>
         <input type='text' name='team[name]'><br>
         <label for='team[motto]'>Team Motto: </label>
@@ -21,9 +21,12 @@
         while x <= 3
         x += 1
       %>
-        <h2>Hero <%=x%></h2>
-        <input type='text' name='member<%=x%>_name'>
-      
+        <div class='hero'>
+          <h2>Hero <%=x%></h2>
+          <input type='text' name='member<%=x%>_name'><br>
+          <input type='text' name='member<%=x%>_power'><br>
+          <input type='text' name='member<%=x%>_bio'><br>
+        </div>
       <% end %>
       
       
