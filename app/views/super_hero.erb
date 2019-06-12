@@ -24,9 +24,12 @@
         <div class='hero'>
           <h2>Hero <%=x%></h2>
           
-          <input type='text' name='team[hero][][]id='member<%=x%>_name'><br>
-          <input type='text' id='member<%=x%>_power'><br>
-          <input type='text' id='member<%=x%>_bio'><br>
+          <label for='team[hero][][name]'>Hero Name: </label>
+          <input type='text' name='team[hero][][name]' id='member<%=x%>_name'><br>
+          <label for='team[hero][][power]'>Hero Power: </label>
+          <input type='text' name ='team[hero][][power]' id='member<%=x%>_power'><br>
+          <label for='team[hero][][bio]'>Hero Biography: </label>
+          <input type='text' name = 'team[hero][][bio]' id='member<%=x%>_bio'><br>
         </div>
       <% end %>
       
