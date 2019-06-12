@@ -23,9 +23,10 @@
       %>
         <div class='hero'>
           <h2>Hero <%=x%></h2>
-          <input type='text' name='member<%=x%>_name'><br>
-          <input type='text' name='member<%=x%>_power'><br>
-          <input type='text' name='member<%=x%>_bio'><br>
+          
+          <input type='text' name='team[hero][][]id='member<%=x%>_name'><br>
+          <input type='text' id='member<%=x%>_power'><br>
+          <input type='text' id='member<%=x%>_bio'><br>
         </div>
       <% end %>
       
